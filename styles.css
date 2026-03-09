@@ -560,7 +560,7 @@ p {
     flex: 1;
     padding: 2.25rem;
     background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 50%, #e9ecef 100%);
-    border: 2px solid var(--primary-crimson);
+    border: 2px  ;
     border-radius: 15px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
     position: relative;
