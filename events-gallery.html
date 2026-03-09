@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Gallery - CFMARC</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip to main content -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="index.html" class="logo">
+                        <img src="images/CFMARC Logo.jpg" alt="CFMARC Logo">
+                    </a>
+                </div>
+                
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-dropdown="about">About Us</a>
+                        <ul class="dropdown-menu" id="about-dropdown">
+                            <li><a href="about/board-members.html">Board Of Directors</a></li>
+                            <li><a href="about/senior-management.html">Leadership Team</a></li>
+                            <li><a href="about/csr-projects.html">Corporate Social Responsibility</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="business/properties.html" class="nav-link dropdown-toggle" data-dropdown="business">Business</a>
+                        <div class="dropdown-menu" id="business">
+                            <a href="business/properties.html" class="dropdown-link">Properties with CFMARC</a>
+                            <a href="business/assets-under-possession.html" class="dropdown-link">Assets Under Possession</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-dropdown="regulatory">Regulatory Information</a>
+                        <ul class="dropdown-menu" id="regulatory-dropdown">
+                            <li><a href="about/annual-return.html">Annual Return</a></li>
+                            <li><a href="about/policies.html">Policies</a></li>
+                            <li><a href="about/customer-grievance.html">Customer Grievance</a></li>
+                            <li><a href="about/corporate-notices.html">Corporate Notices</a></li>
+                            <li><a href="about/disclosure.html">Disclosure</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="events-gallery.html" class="nav-link">Events Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="careers-at-cfmarc.html" class="nav-link">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact-us.html" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Events Gallery</h1>
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a> / <a href="#">Events</a>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section class="section">
+            <div class="container">
+                <div class="intro-text">
+                    <p>At CFMARC, we believe in fostering a vibrant workplace culture and celebrating important occasions together. Our events showcase our commitment to team building, social responsibility, and creating memorable experiences for our employees and stakeholders.</p>
+                </div>
+
+                                <!-- Yearly Get Together -->
+                <div class="event-category">
+                    <div class="events-grid">
+                        <div class="event-card" data-category="annual">
+                            <div class="collage-gallery">
+                                <div class="gallery-grid">
+                                    <img src="images/events/goa1.jpeg" alt="Yearly Get Together" class="gallery-item" onclick="openLightbox(this, 0)">
+                                    <img src="images/events/goa2.jpeg" alt="Offsite Meeting" class="gallery-item" onclick="openLightbox(this, 1)">
+                                    <img src="images/events/goa3.jpeg" alt="Team Dinner" class="gallery-item" onclick="openLightbox(this, 2)">
+                                    <img src="images/events/Goa4.jpeg" alt="Team Dinner" class="gallery-item" onclick="openLightbox(this, 3)">
+                                    <img src="images/events/Goa5.jpeg" alt="Team Dinner" class="gallery-item" onclick="openLightbox(this, 4)">
+                                    <img src="images/events/Goa6.jpeg" alt="Team Dinner" class="gallery-item" onclick="openLightbox(this, 5)">
+                                    <img src="images/events/Goa7.jpeg" alt="Team Dinner" class="gallery-item" onclick="openLightbox(this, 6)">
+                                    <img src="images/events/Goa8.JPG" alt="Team Dinner" class="gallery-item" onclick="openLightbox(this, 7)">
+                                    <img src="images/events/Goa9.JPG" alt="Team Dinner" class="gallery-item" onclick="openLightbox(this, 8)">
+                                    <img src="images/events/Goa10.JPG" alt="Team Dinner" class="gallery-item" onclick="openLightbox(this, 9)">
+                                    <img src="images/events/Goa11.JPG" alt="Team Dinner" class="gallery-item" onclick="openLightbox(this, 10)">
+                                </div>
+                            </div>
+                            <div class="event-content">
+                                <h3>Annual Offsite Get Together</h3>
+                                <p class="event-date">February 2026</p>
+                                <p>Our yearly offsite gathering combines team building, strategic planning, and celebration. It's an opportunity to reflect on achievements and set goals for the coming year.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cricket Tournament -->
+                <div class="event-category">
+                    <div class="events-grid">
+                        <div class="event-card" data-category="cricket">
+                            <div class="collage-gallery">
+                                <div class="gallery-grid">
+                                    <img src="images/events/Cricket1.png" alt="Cricket Tournament" class="gallery-item" onclick="openLightbox(this, 0)">
+                                    <img src="images/events/Cricket5.JPG" alt="Cricket Team" class="gallery-item" onclick="openLightbox(this, 1)">
+                                    <img src="images/events/Cricket3.jpeg" alt="Cricket Award" class="gallery-item" onclick="openLightbox(this, 2)">
+                                    <img src="images/events/Cricket4.jpeg" alt="Cricket Celebration" class="gallery-item" onclick="openLightbox(this, 3)">
+                                    <img src="images/events/Cricket5.jpeg" alt="Cricket Celebration" class="gallery-item" onclick="openLightbox(this, 4)">
+                                    <img src="images/events/Cricket6.jpeg" alt="Cricket Celebration" class="gallery-item" onclick="openLightbox(this, 5)">
+                                    <img src="images/events/Cricket7.jpeg" alt="Cricket Celebration" class="gallery-item" onclick="openLightbox(this, 6)">
+                                    <img src="images/events/Cricket8.jpeg" alt="Cricket Celebration" class="gallery-item" onclick="openLightbox(this, 7)">
+                                    <img src="images/events/Cricket9.jpeg" alt="Cricket Celebration" class="gallery-item" onclick="openLightbox(this, 8)">
+                                    <img src="images/events/Cricket10.jpeg" alt="Cricket Celebration" class="gallery-item" onclick="openLightbox(this, 9)">
+                                    <img src="images/events/Cricket11.jpeg" alt="Cricket Celebration" class="gallery-item" onclick="openLightbox(this, 10)">
+                                    <img src="images/events/Cricket12.jpeg" alt="Cricket Celebration" class="gallery-item" onclick="openLightbox(this, 11)">
+                                </div>
+                            </div>
+                            <div class="event-content">
+                                <h3>Annual Cricket Tournament</h3>
+                                <p class="event-date">February 2026</p>
+                                <p>Our annual cricket tournament brings together teams from across the organization for friendly competition and team building. This event promotes sportsmanship, collaboration, and healthy competition among colleagues.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- International Yoga Day -->
+                <div class="event-category">
+                    <div class="events-grid">
+                        <div class="event-card">
+                            <div class="video-container">
+                                <video autoplay loop muted playsinline>
+                                    <source src="images/events/Yoga Session.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="event-content">
+                                <h3>International Yoga Day</h3>
+                                <p class="event-date">June 21, 2025</p>
+                                <p>Celebrating International Yoga Day with special sessions for all employees. We promote health, wellness, and work-life balance through yoga and mindfulness practices.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Festival Celebrations -->
+                <div class="event-category">
+                    <div class="events-grid">
+                        <div class="event-card" data-category="christmas">
+                            <div class="collage-gallery">
+                                <div class="gallery-grid">
+                                    <img src="images/events/christmas5.jpg" alt="Christmas Celebration" class="gallery-item" onclick="openLightbox(this, 0)">
+                                    <img src="images/events/christmas6.png" alt="Christmas Lights" class="gallery-item" onclick="openLightbox(this, 1)">
+                                    <img src="images/events/christmas3.png" alt="Christmas Sweets" class="gallery-item" onclick="openLightbox(this, 2)">
+                                    <img src="images/events/Christmas4.jpeg" alt="Christmas Decorations" class="gallery-item" onclick="openLightbox(this, 3)">
+                                    <img src="images/events/Christmas1.jpeg" alt="Christmas Decorations" class="gallery-item" onclick="openLightbox(this, 4)">
+                                    <img src="images/events/Christmas2.jpeg" alt="Christmas Decorations" class="gallery-item" onclick="openLightbox(this, 5)">
+                                </div>
+                            </div>
+                            <div class="event-content">
+                                <h3>Christmas Celebration</h3>
+                                <p class="event-date">December 2025</p>
+                                <p>Enjoyed in celebrating the festive season with our annual Christmas celebration. We have lighted up the office with holiday cheer, sharing gifts, and delicious treats.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Women's Day -->
+                <div class="event-category">
+                    <div class="events-grid">
+                        <div class="event-card" data-category="womens">
+                            <div class="collage-gallery">
+                                <div class="gallery-grid">
+                                    <img src="images/events/womens1.jpeg" alt="Women's Day" class="gallery-item" onclick="openLightbox(this, 0)">
+                                    <img src="images/events/womens5.JPG" alt="Women's Award" class="gallery-item" onclick="openLightbox(this, 1)">
+                                    <img src="images/events/womens3.JPG" alt="Women's Team" class="gallery-item" onclick="openLightbox(this, 2)">
+                                    <img src="images/events/womens4.JPG" alt="Women's Celebration" class="gallery-item" onclick="openLightbox(this, 3)">
+                                    <img src="images/events/womens6.JPG" alt="Women's Celebration" class="gallery-item" onclick="openLightbox(this, 4)">
+                                    <img src="images/events/womens7.JPG" alt="Women's Celebration" class="gallery-item" onclick="openLightbox(this, 5)">
+                                    <img src="images/events/womens8.JPG" alt="Women's Celebration" class="gallery-item" onclick="openLightbox(this, 6)">
+                                    <img src="images/events/womens9.jpg" alt="Women's Celebration" class="gallery-item" onclick="openLightbox(this, 7)">
+                                </div>
+                            </div>
+                            <div class="event-content">
+                                <h3>International Women's Day</h3>
+                                <p class="event-date">March 8, 2025</p>
+                                <p>Honoring the incredible women of CFMARC with special recognition, awards, and celebrations. We highlight their contributions and promote gender equality in workplace.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rewards Section -->
+        <section class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">
+    <span class="trophy-icon trophy-left">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H7v2h10v-2h-4v-3.1a5.01 5.01 0 0 0 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z" fill="var(--primary-crimson)" stroke="var(--primary-jet)" stroke-width="0.5"/>
+            <circle cx="12" cy="8" r="2" fill="var(--primary-jet)"/>
+        </svg>
+    </span>
+    Awards & Recognition
+    <span class="trophy-icon trophy-right">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H7v2h10v-2h-4v-3.1a5.01 5.01 0 0 0 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z" fill="var(--primary-crimson)" stroke="var(--primary-jet)" stroke-width="0.5"/>
+            <circle cx="12" cy="8" r="2" fill="var(--primary-jet)"/>
+        </svg>
+    </span>
+</h2>
+                <div class="rewards-grid">
+                    <div class="reward-card">
+                        <div class="reward-image">
+                            <img src="images/events/excellence2.png" alt="Excellence Award">
+                        </div>
+                        <div class="reward-content">
+                            <h3>Excellence Award</h3>
+                            <p>Recognizing outstanding performance and dedication to CFMARC's mission and values.</p>
+                        </div>
+                    </div>
+                    <div class="reward-card">
+                        <div class="reward-image">
+                            <img src="images/events/Excellence.png" alt="Excellence Award">
+                        </div>
+                        <div class="reward-content">
+                            <h3>Excellence Award</h3>
+                            <p>Recognizing outstanding performance and dedication to CFMARC's mission and values.</p>
+                        </div>
+                    </div>
+                    <div class="reward-card">
+                        <div class="reward-image">
+                            <img src="images/events/Excellence1.png" alt="Excellence Award">
+                        </div>
+                        <div class="reward-content">
+                            <h3>Excellence Award</h3>
+                            <p>Recognizing outstanding performance and dedication to CFMARC's mission and values.</p>
+                        </div>
+                    </div>
+                    <div class="reward-card">
+                        <div class="reward-image">
+                            <img src="images/events/innovation1.png" alt="Innovation Award">
+                        </div>
+                        <div class="reward-content">
+                            <h3>Innovation Award</h3>
+                            <p>Celebrating creative solutions and innovative approaches to asset reconstruction and business challenges.</p>
+                        </div>
+                    </div>
+                    <div class="reward-card">
+                        <div class="reward-image">
+                            <img src="images/events/innovation2.png" alt="Innovation Award">
+                        </div>
+                        <div class="reward-content">
+                            <h3>Innovation Award</h3>
+                            <p>Celebrating creative solutions and innovative approaches to asset reconstruction and business challenges.</p>
+                        </div>
+                    </div>
+                    <div class="reward-card">
+                        <div class="reward-image">
+                            <img src="images/events/Best Team.png" alt="Team Award">
+                        </div>
+                        <div class="reward-content">
+                            <h3>Best Team Award</h3>
+                            <p>Honoring collaborative excellence and outstanding teamwork in achieving organizational goals.</p>
+                        </div>
+                    </div>
+                    <div class="reward-card">
+                        <div class="reward-image">
+                            <img src="images/events/Leadership.png" alt="Leadership Award">
+                        </div>
+                        <div class="reward-content">
+                            <h3>Leadership Excellence</h3>
+                            <p>Recognizing visionary leadership and commitment to guiding CFMARC toward continued success.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+       <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-content">
+                    <!-- Quick Links Section -->
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html">About Us</a></li>
+                            <li><a href="business/properties.html">Properties</a></li>
+                            <li><a href="business/assets-under-possession.html">Assets Under Possession</a></li>
+                            <li><a href="events-gallery.html">Events Gallery</a></li>
+                            <li><a href="careers-at-cfmarc.html">Careers</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Services Section -->
+                    <div class="footer-section">
+                        <h3>Services</h3>
+                        <ul class="footer-links">
+                            <li><a href="business/properties.html">Property Auctions</a></li>
+                            <li><a href="business/assets-under-possession.html">Asset Management</a></li>
+                            <li><a href="about/annual-return.html">Annual Returns</a></li>
+                            <li><a href="about/policies.html">Policies & Procedures</a></li>
+                            <li><a href="about/customer-grievance.html">Customer Support</a></li>
+                            <li><a href="about/csr-projects.html">CSR Initiatives</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info Section -->
+                    <div class="footer-section">
+                        <h3>Contact Info</h3>
+                        <ul class="contact-info">
+                            <li><br>Mon - Fri: 10:30 AM - 7:00 PM<br>Saturday & Sunday: Closed</li>
+                            <li><br>Corporate Office:<br>1st Floor, Wakefield House,Sprott Road,<br>Ballard Estate,Mumbai 400 001, India<br>+91- 22 47831222 ( Board Line)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p style="font-size: 0.85rem; opacity: 0.7;">Designed & Developed by CFMARC Tech Team</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <img id="lightbox-image" src="" alt="">
+            <button class="lightbox-prev" onclick="changeLightboxImage(-1)">❮</button>
+            <button class="lightbox-next" onclick="changeLightboxImage(1)">❯</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Gallery images organized by event category
+        const eventImages = {
+            annual: [
+                'images/events/goa1.jpeg',
+                'images/events/goa2.jpeg', 
+                'images/events/goa3.jpeg',
+                'images/events/Goa4.jpeg',
+                'images/events/Goa5.jpeg',
+                'images/events/Goa6.jpeg',
+                'images/events/Goa7.jpeg',
+                'images/events/Goa8.JPG',
+                'images/events/Goa9.JPG',
+                'images/events/Goa10.JPG',
+                'images/events/Goa11.JPG'
+            ],
+            cricket: [
+                'images/events/Cricket1.png',
+                'images/events/Cricket5.JPG',
+                'images/events/Cricket3.jpeg',
+                'images/events/Cricket4.jpeg',
+                'images/events/Cricket5.jpeg',
+                'images/events/Cricket6.jpeg',
+                'images/events/Cricket7.jpeg',
+                'images/events/Cricket8.jpeg',
+                'images/events/Cricket9.jpeg',
+                'images/events/Cricket10.jpeg',
+                'images/events/Cricket11.jpeg',
+                'images/events/Cricket12.jpeg'
+            ],
+            christmas: [
+                'images/events/christmas5.jpg',
+                'images/events/christmas6.png',
+                'images/events/christmas3.png',
+                'images/events/Christmas4.jpeg',
+                'images/events/Christmas1.jpeg',
+                'images/events/Christmas2.jpeg'
+            ],
+            womens: [
+                'images/events/womens1.jpeg',
+                'images/events/womens5.JPG',
+                'images/events/womens3.JPG',
+                'images/events/womens4.JPG',
+                'images/events/womens6.JPG',
+                'images/events/womens7.JPG',
+                'images/events/womens8.JPG',
+                'images/events/womens9.jpg'
+            ]
+        };
+
+        let currentImageIndex = 0;
+        let currentEventImages = [];
+
+        function openLightbox(element, index) {
+            // Find which event category this image belongs to
+            const eventCard = element.closest('.event-card');
+            const eventCategory = eventCard.dataset.category || 'annual';
+            
+            currentEventImages = eventImages[eventCategory] || [];
+            currentImageIndex = index;
+            
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightbox-image');
+            
+            lightboxImage.src = currentEventImages[index];
+            lightbox.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        function changeLightboxImage(direction) {
+            currentImageIndex += direction;
+            
+            // Wrap around if we go beyond array bounds
+            if (currentImageIndex < 0) {
+                currentImageIndex = currentEventImages.length - 1;
+            } else if (currentImageIndex >= currentEventImages.length) {
+                currentImageIndex = 0;
+            }
+            
+            const lightboxImage = document.getElementById('lightbox-image');
+            lightboxImage.src = currentEventImages[currentImageIndex];
+        }
+
+        // Close lightbox when clicking outside
+        window.onclick = function(event) {
+            const lightbox = document.getElementById('lightbox');
+            if (event.target === lightbox) {
+                closeLightbox();
+            }
+        }
+
+        // Close lightbox with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeLightbox();
+            } else if (event.key === 'ArrowLeft') {
+                changeLightboxImage(-1);
+            } else if (event.key === 'ArrowRight') {
+                changeLightboxImage(1);
+            }
+        });
+    </script>
+</body>
+</html>
+        
