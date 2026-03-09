@@ -830,7 +830,7 @@ p {
     
     .founder-message p {
         font-size: 1rem;
-        text-align: left;
+        text-align: justify;
         text-align-last: left;
     }
     
