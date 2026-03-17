@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Connect - CFMARC</title>
+    <link rel="icon" type="image/x-icon" href="Images/CFMARC Logo.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="chatbot.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip to main content -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="index.html" class="logo">
+                        <img src="images/CFMARC Logo.jpg" alt="CFMARC Logo">
+                    </a>    
+                </div>
+                
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-dropdown="about">About Us</a>
+                        <ul class="dropdown-menu" id="about-dropdown">
+                            <li><a href="about/board-members.html">Board Of Directors</a></li>
+                            <li><a href="about/senior-management.html">Leadership Team</a></li>
+                            <li><a href="about/csr-projects.html">Corporate Social Responsibility</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="business/properties.html" class="nav-link dropdown-toggle" data-dropdown="business">Business</a>
+                        <div class="dropdown-menu" id="business">
+                            <a href="business/properties.html" class="dropdown-link">Properties with CFMARC</a>
+                            <a href="business/assets-under-possession.html" class="dropdown-link">Assets Under Possession</a>
+                            <a href="business-connect.html" class="dropdown-link">Business Connect</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-dropdown="regulatory">Regulatory Information</a>
+                        <ul class="dropdown-menu" id="regulatory-dropdown">
+                            <li><a href="about/annual-return.html">Annual Return</a></li>
+                            <li><a href="about/policies.html">Policies</a></li>
+                            <li><a href="about/customer-grievance.html">Customer Grievance</a></li>
+                            <li><a href="about/corporate-notices.html">Corporate Notices</a></li>
+                            <li><a href="about/disclosure.html">Disclosure</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="events-gallery.html" class="nav-link">Events Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="careers-at-cfmarc.html" class="nav-link">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact-us.html" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Business Connect</h1>
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a> / <a href="business/properties.html">Business</a> / <span>Business Connect</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Business Connect Section -->
+        <section class="section">
+            <div class="container">
+                <div class="intro-text">
+                    <p>CFMARC Business Connect serves as a strategic platform for collaboration, partnership, and growth. We connect with businesses, investors, and stakeholders to create value-driven opportunities in the asset reconstruction sector.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Services Section -->
+        <section class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Our Services</h2>
+                <div class="services-grid">
+                    <!-- Asset Acquisition -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="var(--primary-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <polyline points="9 22 9 12 15 12 15 22" stroke="var(--primary-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Asset Acquisition</h3>
+                        <p>CFM ARC acquires non-performing assets (NPAs) from banks and financial institutions, enabling them to strengthen their balance sheets and focus on core banking operations.</p>
+                        <ul class="service-features">
+                            <li>NPA portfolio acquisition</li>
+                            <li>Balance sheet optimization</li>
+                            <li>Core banking focus enablement</li>
+                            <li>Risk transfer solutions</li>
+                        </ul>
+                    </div>
+
+                    <!-- Debt Resolution -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z" stroke="var(--primary-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Debt Resolution</h3>
+                        <p>We adopt structured resolution strategies including settlement arrangements, restructuring plans, and asset monetization to resolve stressed assets.</p>
+                        <ul class="service-features">
+                            <li>Settlement arrangements</li>
+                            <li>Restructuring plans</li>
+                            <li>Asset monetization strategies</li>
+                            <li>Stressed asset resolution</li>
+                        </ul>
+                    </div>
+
+                    <!-- Asset Management -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="var(--primary-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="12" cy="7" r="4" stroke="var(--primary-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Asset Management</h3>
+                        <p>Our experienced team actively manages acquired assets to maximize recovery and optimize value for stakeholders.</p>
+                        <ul class="service-features">
+                            <li>Active asset management</li>
+                            <li>Recovery maximization</li>
+                            <li>Value optimization</li>
+                            <li>Stakeholder value creation</li>
+                        </ul>
+                    </div>
+
+                    <!-- Borrower Engagement -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="var(--primary-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="9" cy="7" r="4" stroke="var(--primary-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87" stroke="var(--primary-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" stroke="var(--primary-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Borrower Engagement</h3>
+                        <p>CFM ARC works constructively with borrowers to identify practical and mutually beneficial resolution solutions.</p>
+                        <ul class="service-features">
+                            <li>Constructive borrower engagement</li>
+                            <li>Practical resolution solutions</li>
+                            <li>Mutually beneficial outcomes</li>
+                            <li>Collaborative approach</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Borrower Resolution Support Section -->
+        <section class="section">
+            <div class="container">
+                <div class="borrower-support-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Borrower Resolution Support</h2>
+                        <div class="title-accent"></div>
+                    </div>
+                    <div class="borrower-content">
+                        <div class="borrower-main-text">
+                            <p>CFM ARC believes in working constructively with borrowers to achieve practical and mutually beneficial resolution outcomes.</p>
+                            <p>Borrowers whose loan accounts have been assigned to CFM ARC are encouraged to engage with our team to explore resolution options.</p>
+                        </div>
+                        <div class="resolution-mechanisms">
+                            <h3>Possible resolution mechanisms may include:</h3>
+                            <div class="mechanisms-grid">
+                                <div class="mechanism-item">
+                                    <div class="mechanism-icon">
+                                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke="var(--primary-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <h4>One Time Settlement (OTS)</h4>
+                                </div>
+                                <div class="mechanism-item">
+                                    <div class="mechanism-icon">
+                                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                                            <path d="M9 11l3 3L22 4" stroke="var(--primary-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" stroke="var(--primary-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <h4>Structured repayment plans</h4>
+                                </div>
+                                <div class="mechanism-item">
+                                    <div class="mechanism-icon">
+                                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                                            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" stroke="var(--primary-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <polyline points="7 10 12 15 17 10" stroke="var(--primary-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <h4>Asset monetization strategies</h4>
+                                </div>
+                                <div class="mechanism-item">
+                                    <div class="mechanism-icon">
+                                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                                            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke="var(--primary-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <polyline points="14 2 14 8 20 8" stroke="var(--primary-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <line x1="16" y1="13" x2="8" y2="13" stroke="var(--primary-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <line x1="16" y1="17" x2="8" y2="17" stroke="var(--primary-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <h4>Business restructuring solutions</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Loan Settlement Section -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="loan-settlement-section">
+                    <h2 class="section-title">Loan Settlement and Resolution</h2>
+                    <div class="settlement-intro">
+                        <p>Borrowers may approach CFM ARC to explore settlement opportunities for resolving their outstanding dues.</p>
+                    </div>
+                    <div class="settlement-process">
+                        <h3>The settlement process typically involves:</h3>
+                        <div class="process-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>Submission of settlement request</h4>
+                                    <p>Borrowers submit their settlement proposal with supporting documentation</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>Evaluation of borrower financial position</h4>
+                                    <p>Comprehensive assessment of financial capacity and asset valuation</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>Proposal for resolution</h4>
+                                    <p>Detailed settlement terms and repayment structure presented</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>Final settlement agreement</h4>
+                                    <p>Mutual agreement on terms and legal documentation</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>Closure of account upon fulfillment</h4>
+                                    <p>Final closure after complete settlement of agreed terms</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="settlement-cta">
+                        <p>Borrowers interested in exploring settlement options may submit a request through the website or contact our resolution team.</p>
+                        <button class="btn btn-primary" onclick="openResolutionForm()">Contact Resolution Team</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resolution Approach Section -->
+        <section class="section">
+            <div class="container">
+                <div class="resolution-approach-section">
+                    <h2 class="section-title">Our Resolution Approach</h2>
+                    <p class="approach-intro">CFM ARC adopts a structured and transparent approach to the resolution of stressed assets.</p>
+                    <div class="approach-steps">
+                        <div class="approach-step">
+                            <div class="step-header">
+                                <div class="step-icon">
+                                    <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
+                                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="var(--primary-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <polyline points="9 22 9 12 15 12 15 22" stroke="var(--primary-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="step-title">
+                                    <h3>Acquisition</h3>
+                                </div>
+                            </div>
+                            <div class="step-content">
+                                <p>Financial assets are acquired from banks and financial institutions through legally compliant assignment processes.</p>
+                            </div>
+                        </div>
+
+                        <div class="approach-step">
+                            <div class="step-header">
+                                <div class="step-icon">
+                                    <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
+                                        <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke="var(--primary-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="step-title">
+                                    <h3>Assessment</h3>
+                                </div>
+                            </div>
+                            <div class="step-content">
+                                <p>Each asset is evaluated to determine the most appropriate resolution strategy.</p>
+                            </div>
+                        </div>
+
+                        <div class="approach-step">
+                            <div class="step-header">
+                                <div class="step-icon">
+                                    <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="var(--primary-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <circle cx="9" cy="7" r="4" stroke="var(--primary-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87" stroke="var(--primary-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75" stroke="var(--primary-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="step-title">
+                                    <h3>Engagement</h3>
+                                </div>
+                            </div>
+                            <div class="step-content">
+                                <p>CFM ARC engages with borrowers, investors, and other stakeholders to explore viable resolution options.</p>
+                            </div>
+                        </div>
+
+                        <div class="approach-step">
+                            <div class="step-header">
+                                <div class="step-icon">
+                                    <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke="var(--primary-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <polyline points="22 4 12 14.01 9 11.01" stroke="var(--primary-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="step-title">
+                                    <h3>Resolution</h3>
+                                </div>
+                            </div>
+                            <div class="step-content">
+                                <p>Resolution strategies may include settlement arrangements, restructuring plans, asset sales, or legal recovery where necessary.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact CTA Section -->
+        <section class="section">
+            <div class="container">
+                <div class="cta-section">
+                    <h2>Ready to Connect With Us?</h2>
+                    <p>Join hands with CFMARC for strategic business opportunities and value creation in the asset reconstruction sector.</p>
+                    <div class="cta-buttons">
+                        <a href="contact-us.html" class="btn btn-primary">Get in Touch</a>
+                        <a href="business/properties.html" class="btn btn-secondary">View Properties</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Resolution Team Contact Modal -->
+    <div id="resolutionModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Contact Resolution Team</h2>
+                <span class="close-modal" onclick="closeResolutionForm()">&times;</span>
+            </div>
+            <form id="resolutionForm" onsubmit="submitResolutionRequest(event)">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="resFirstName">First Name *</label>
+                        <input type="text" id="resFirstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="resLastName">Last Name *</label>
+                        <input type="text" id="resLastName" name="lastName" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="resEmail">Email Address *</label>
+                    <input type="email" id="resEmail" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="resPhone">Phone Number *</label>
+                    <input type="tel" id="resPhone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="resRequestType">Request Type *</label>
+                    <select id="resRequestType" name="requestType" required>
+                        <option value="">Select request type</option>
+                        <option value="One Time Settlement (OTS)">One Time Settlement (OTS)</option>
+                        <option value="Restructuring Plan">Restructuring Plan</option>
+                        <option value="Asset Monetization">Asset Monetization</option>
+                        <option value="Business Restructuring">Business Restructuring</option>
+                        <option value="General Inquiry">General Inquiry</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="resMessage">Message / Additional Details</label>
+                    <textarea id="resMessage" name="message" rows="4" placeholder="Please provide details about your request..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="resPreferredContact">Preferred Contact Method *</label>
+                    <select id="resPreferredContact" name="preferredContact" required>
+                        <option value="">Select contact method</option>
+                        <option value="Email">Email</option>
+                        <option value="Phone">Phone</option>
+                        <option value="Both">Both</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="resBestTime">Best Time to Contact</label>
+                    <select id="resBestTime" name="bestTime">
+                        <option value="">Select preferred time</option>
+                        <option value="Morning (9 AM - 12 PM)">Morning (9 AM - 12 PM)</option>
+                        <option value="Afternoon (12 PM - 4 PM)">Afternoon (12 PM - 4 PM)</option>
+                        <option value="Evening (4 PM - 7 PM)">Evening (4 PM - 7 PM)</option>
+                    </select>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" onclick="closeResolutionForm()">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Submit Request</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ChatBot Widget -->
+    <div id="chatbotWidget" class="chatbot-widget">
+        <div class="chatbot-header">
+            <div class="chatbot-title">
+                <span class="ai-icon">🤖</span>
+                <h3>CFM.AI Assistant</h3>
+                <span class="status-indicator online"></span>
+            </div>
+            <button id="toggleChatbot" class="toggle-btn">
+                <span>−</span>
+            </button>
+            <button id="closeChatbot" class="close-btn">
+                ×
+            </button>
+        </div>
+        
+        <div class="chatbot-body" id="chatbotBody">
+            <div class="chat-messages" id="chatMessages">
+                <!-- Messages will be dynamically added here -->
+            </div>
+            
+            <div class="chat-input-container" id="chatInputContainer">
+                <input type="text" id="chatInput" placeholder="Type your message..." disabled>
+                <button id="sendMessage" class="send-btn" disabled>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-content">
+                    <!-- Quick Links Section -->
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html">About Us</a></li>
+                            <li><a href="business/properties.html">Properties</a></li>
+                            <li><a href="business/assets-under-possession.html">Assets Under Possession</a></li>
+                            <li><a href="events-gallery.html">Events Gallery</a></li>
+                            <li><a href="careers-at-cfmarc.html">Careers</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Business Section -->
+                    <div class="footer-section">
+                        <h3>Business</h3>
+                        <ul class="footer-links">
+                            <li><a href="business/properties.html">Properties with CFMARC</a></li>
+                            <li><a href="business/assets-under-possession.html">Asset Management</a></li>
+                            <li><a href="business-connect.html">Business Connect</a></li>
+                            <li><a href="about/annual-return.html">Annual Returns</a></li>
+                            <li><a href="about/policies.html">Policies & Procedures</a></li>
+                            <li><a href="about/customer-grievance.html">Customer Support</a></li>
+                            <li><a href="about/csr-projects.html">CSR Initiatives</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info Section -->
+                    <div class="footer-section">
+                        <h3>Contact Info</h3>
+                        <ul class="contact-info">
+                            <li><br>Mon - Fri: 10:30 AM - 7:00 PM<br>Saturday & Sunday: Closed</li>
+                            <li><br>Corporate Office:<br>1st Floor, Wakefield House,Sprott Road,<br>Ballard Estate,Mumbai 400 001, India<br>+91- 22 47831222 ( Board Line)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p style="font-size: 0.85rem; opacity: 0.7;">Designed & Developed by CFMARC Tech Team</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="chatbot.js"></script>
+    
+    <script>
+        // Resolution Form Functions
+        function openResolutionForm() {
+            document.getElementById('resolutionModal').style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+        
+        function closeResolutionForm() {
+            document.getElementById('resolutionModal').style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restore scrolling
+            document.getElementById('resolutionForm').reset(); // Reset form
+        }
+        
+        function submitResolutionRequest(event) {
+            event.preventDefault();
+            
+            const form = document.getElementById('resolutionForm');
+            const formData = new FormData(form);
+            
+            // Show loading state
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Submitting...';
+            submitBtn.disabled = true;
+            
+            // Convert FormData to plain object for email sending
+            const data = {};
+            formData.forEach((value, key) => {
+                data[key] = value;
+            });
+            
+            // Send data to server
+            fetch('http://localhost:3002/api/submit-resolution-request', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+                mode: 'cors'
+            })
+            .then(response => response.json())
+            .then(result => {
+                if (result.success) {
+                    showNotification('Resolution request submitted successfully! Our team will contact you soon.', 'success');
+                    closeResolutionForm();
+                } else {
+                    showNotification(result.message || 'Error submitting request. Please try again.', 'error');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                showNotification('Error submitting request. Please check your connection and try again.', 'error');
+            })
+            .finally(() => {
+                // Reset button state
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            });
+        }
+        
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('resolutionModal');
+            if (event.target === modal) {
+                closeResolutionForm();
+            }
+        }
+        
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeResolutionForm();
+            }
+        });
+        
+        // Notification function (if not already defined)
+        function showNotification(message, type) {
+            // Create notification element if it doesn't exist
+            let notification = document.getElementById('notification');
+            if (!notification) {
+                notification = document.createElement('div');
+                notification.id = 'notification';
+                notification.style.position = 'fixed';
+                notification.style.top = '20px';
+                notification.style.right = '20px';
+                notification.style.padding = '15px 20px';
+                notification.style.borderRadius = '8px';
+                notification.style.color = 'white';
+                notification.style.fontWeight = '500';
+                notification.style.zIndex = '10000';
+                notification.style.maxWidth = '300px';
+                notification.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
+                document.body.appendChild(notification);
+            }
+            
+            // Set message and style based on type
+            notification.textContent = message;
+            notification.style.backgroundColor = type === 'success' ? '#28a745' : '#dc3545';
+            
+            // Show notification
+            notification.style.display = 'block';
+            notification.style.opacity = '0';
+            notification.style.transform = 'translateX(100%)';
+            
+            // Animate in
+            setTimeout(() => {
+                notification.style.transition = 'all 0.3s ease';
+                notification.style.opacity = '1';
+                notification.style.transform = 'translateX(0)';
+            }, 10);
+            
+            // Hide after 5 seconds
+            setTimeout(() => {
+                notification.style.opacity = '0';
+                notification.style.transform = 'translateX(100%)';
+                setTimeout(() => {
+                    notification.style.display = 'none';
+                }, 300);
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
