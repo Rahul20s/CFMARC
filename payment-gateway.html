@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway - CFM ARC</title>
+    <link rel="icon" type="image/x-icon" href="Images/CFMARC Logo.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="payment-gateway.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip to main content -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="index.html" class="logo">
+                        <img src="images/CFMARC Logo.jpg" alt="CFMARC Logo">
+                    </a>    
+                </div>
+                
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-dropdown="about">About Us</a>
+                        <ul class="dropdown-menu" id="about-dropdown">
+                            <li><a href="about/board-members.html">Board Of Directors</a></li>
+                            <li><a href="about/senior-management.html">Leadership Team</a></li>
+                            <li><a href="about/csr-projects.html">Corporate Social Responsibility</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="business/properties.html" class="nav-link dropdown-toggle" data-dropdown="business">Business</a>
+                        <div class="dropdown-menu" id="business">
+                            <a href="business/properties.html" class="dropdown-link">Properties with CFMARC</a>
+                            <a href="business/assets-under-possession.html" class="dropdown-link">Assets Under Possession</a>
+                            <a href="business-connect.html" class="dropdown-link">Business Connect</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-dropdown="regulatory">Regulatory Information</a>
+                        <ul class="dropdown-menu" id="regulatory-dropdown">
+                            <li><a href="about/annual-return.html">Annual Return</a></li>
+                            <li><a href="about/policies.html">Policies</a></li>
+                            <li><a href="about/customer-grievance.html">Customer Grievance</a></li>
+                            <li><a href="about/corporate-notices.html">Corporate Notices</a></li>
+                            <li><a href="about/disclosure.html">Disclosure</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="events-gallery.html" class="nav-link">Events Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="careers-at-cfmarc.html" class="nav-link">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact-us.html" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="payment-gateway-container">
+        <div class="container">
+            <!-- Page Header -->
+            <section class="page-header">
+                <div class="page-header-content">
+                    <h1>Payment Gateway</h1>
+                </div>
+            </section>
+
+            <!-- Payment Gateway Main Section -->
+            <section class="payment-main">
+                <div class="payment-card">
+                    <!-- Step 1: Account Verification -->
+                    <div class="payment-step active" id="step1">
+                        <div class="step-header">
+                            <h2>Account Verification</h2>
+                        </div>
+                        
+                        <form class="verification-form" id="verificationForm">
+                            <div class="form-group">
+                                <label for="accountNumber">Loan Account Number *</label>
+                                <input type="text" id="accountNumber" name="accountNumber" 
+                                       placeholder="Enter your loan account number" required>
+                                <span class="form-hint">Format: LA123456789</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="mobileNumber">Mobile Number *</label>
+                                <input type="tel" id="mobileNumber" name="mobileNumber" 
+                                       placeholder="Enter registered mobile number" maxlength="10" required>
+                                <span class="form-hint">10-digit mobile number registered with loan</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="captchaInput">Captcha Verification *</label>
+                                <div class="captcha-container">
+                                    <div class="captcha-display" id="captchaDisplay">
+                                        <!-- Captcha will be generated here -->
+                                    </div>
+                                    <button type="button" class="captcha-refresh" id="refreshCaptcha">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M23 4v6h-6M1 20v-6h6M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <input type="text" id="captchaInput" name="captchaInput" 
+                                       placeholder="Enter captcha code" required>
+                            </div>
+                            
+                            <button type="submit" class="btn-primary" id="sendOtpBtn">
+                                <span class="btn-text">Send OTP</span>
+                                <span class="btn-loader" style="display: none;">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 12a9 9 0 11-6.219-8.56"/>
+                                    </svg>
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Step 2: OTP Verification -->
+                    <div class="payment-step" id="step2">
+                        <div class="step-header">
+                            <h2>OTP Verification</h2>
+                        </div>
+                        
+                        <form class="otp-form" id="otpForm">
+                            <div class="form-group">
+                                <label>Enter OTP *</label>
+                                <div class="otp-inputs">
+                                    <input type="text" class="otp-input" maxlength="1" data-index="0">
+                                    <input type="text" class="otp-input" maxlength="1" data-index="1">
+                                    <input type="text" class="otp-input" maxlength="1" data-index="2">
+                                    <input type="text" class="otp-input" maxlength="1" data-index="3">
+                                    <input type="text" class="otp-input" maxlength="1" data-index="4">
+                                    <input type="text" class="otp-input" maxlength="1" data-index="5">
+                                </div>
+                                <div class="otp-timer">
+                                    <span id="otpTimer">05:00</span>
+                                    <button type="button" class="resend-otp" id="resendOtp">Resend OTP</button>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn-primary">Verify & Continue</button>
+                        </form>
+                    </div>
+
+                    <!-- Step 3: Account Details -->
+                    <div class="payment-step" id="step3">
+                        <div class="step-header">
+                            <h2>Account Details</h2>
+                        </div>
+                        
+                        <div class="account-details" id="accountDetails">
+                            <!-- Account details will be populated here -->
+                        </div>
+                        
+                        <button class="btn-primary" id="proceedToPayment">Proceed to Payment</button>
+                    </div>
+
+                    <!-- Step 4: Payment Options -->
+                    <div class="payment-step" id="step4">
+                        <div class="step-header">
+                            <h2>Payment Options</h2>
+                        </div>
+                        
+                        <div class="payment-options">
+                            <div class="payment-option" data-method="upi">
+                                <div class="option-icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="2" y="4" width="20" height="16" rx="2"/>
+                                        <path d="M7 15h10M7 11h10"/>
+                                    </svg>
+                                </div>
+                                <div class="option-content">
+                                    <h3>UPI Payment</h3>
+                                </div>
+                                <div class="option-arrow">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 18l6-6-6-6"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            
+                            <div class="payment-option" data-method="netbanking">
+                                <div class="option-icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="6" width="18" height="12" rx="2"/>
+                                        <path d="M3 10h18M3 14h18"/>
+                                    </svg>
+                                </div>
+                                <div class="option-content">
+                                    <h3>Net Banking</h3>
+                                </div>
+                                <div class="option-arrow">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 18l6-6-6-6"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            
+                            <div class="payment-option" data-method="card">
+                                <div class="option-icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="5" width="18" height="14" rx="2"/>
+                                        <path d="M3 10h18"/>
+                                        <circle cx="8" cy="15" r="1"/>
+                                        <circle cx="16" cy="15" r="1"/>
+                                    </svg>
+                                </div>
+                                <div class="option-content">
+                                    <h3>Debit/Credit Card</h3>
+                                </div>
+                                <div class="option-arrow">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 18l6-6-6-6"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            
+                            <div class="payment-option" data-method="wallet">
+                                <div class="option-icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 12V7a2 2 0 00-2-2H5a2 2 0 00-2 2v5"/>
+                                        <path d="M3 12v5a2 2 0 002 2h14a2 2 0 002-2v-5"/>
+                                        <path d="M12 12a3 3 0 100-6 3 3 0 000 6z"/>
+                                    </svg>
+                                </div>
+                                <div class="option-content">
+                                    <h3>Mobile Wallets</h3>
+                                </div>
+                                <div class="option-arrow">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 18l6-6-6-6"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 5: Payment Processing -->
+                    <div class="payment-step" id="step5">
+                        <div class="step-header">
+                            <h2>Payment Processing</h2>
+                        </div>
+                        
+                        <div class="payment-form-container" id="paymentFormContainer">
+                            <!-- Payment form will be loaded based on selected method -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment Summary Sidebar -->
+                <div class="payment-summary">
+                    <div class="summary-header">
+                        <h3>Payment Summary</h3>
+                    </div>
+                    
+                    <div class="summary-content" id="paymentSummary">
+                        <div class="summary-item">
+                            <span class="label">Account Number:</span>
+                            <span class="value" id="summaryAccount">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="label">Customer Name:</span>
+                            <span class="value" id="summaryName">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="label">Outstanding Amount:</span>
+                            <span class="value" id="summaryOutstanding">₹0</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="label">Payment Amount:</span>
+                            <span class="value amount-input">
+                                <input type="number" id="paymentAmount" placeholder="Enter amount" min="1">
+                            </span>
+                        </div>
+                        <div class="summary-divider"></div>
+                        <div class="summary-item total">
+                            <span class="label">Total Amount:</span>
+                            <span class="value total-amount" id="totalAmount">₹0</span>
+                        </div>
+                    </div>
+                    
+                    <div class="summary-footer">
+                        <div class="security-info">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                            <span>Secured by 256-bit SSL encryption</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-content">
+                    <!-- Quick Links Section -->
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html">About Us</a></li>
+                            <li><a href="business/properties.html">Properties</a></li>
+                            <li><a href="business/assets-under-possession.html">Assets Under Possession</a></li>
+                            <li><a href="events-gallery.html">Events Gallery</a></li>
+                            <li><a href="careers-at-cfmarc.html">Careers</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Services Section -->
+                    <div class="footer-section">
+                        <h3>Services</h3>
+                        <ul class="footer-links">
+                            <li><a href="business/properties.html">Property Auctions</a></li>
+                            <li><a href="business/assets-under-possession.html">Asset Management</a></li>
+                            <li><a href="about/annual-return.html">Annual Returns</a></li>
+                            <li><a href="about/policies.html">Policies & Procedures</a></li>
+                            <li><a href="about/customer-grievance.html">Customer Support</a></li>
+                            <li><a href="about/csr-projects.html">CSR Initiatives</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info Section -->
+                    <div class="footer-section">
+                        <h3>Contact Info</h3>
+                        <ul class="contact-info">
+                            <li><br>Mon - Fri: 10:30 AM - 7:00 PM<br>Saturday & Sunday: Closed</li>
+                            <li><br>Corporate Office:<br>1st Floor, Wakefield House,Sprott Road,<br>Ballard Estate,Mumbai 400 001, India<br>+91- 22 47831222 ( Board Line)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p style="font-size: 0.85rem; opacity: 0.7;">Designed & Developed by CFMARC Tech Team</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="payment-gateway.js"></script>
+</body>
+</html>
