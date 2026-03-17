@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties with CFMARC - CFMARC</title>
+    <link rel="icon" type="image/x-icon" href="../Images/CFMARC Logo.jpg">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../chatbot.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip to main content -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="../index.html" class="logo">
+                        <img src="../images/CFMARC Logo.jpg" alt="CFMARC Logo">
+                    </a>
+                </div>
+                
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-dropdown="about">About Us</a>
+                        <ul class="dropdown-menu" id="about-dropdown">
+                            <li><a href="../about/board-members.html">Board Of Directors</a></li>
+                            <li><a href="../about/senior-management.html">Leadership Team</a></li>
+                            <li><a href="../about/csr-projects.html">Corporate Social Responsibility</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-dropdown="business">Business</a>
+                        <ul class="dropdown-menu" id="business-dropdown">
+                            <li><a href="properties.html">Properties With CFMARC</a></li>
+                            <li><a href="assets-under-possession.html">Assets Under Possession</a></li>
+                            <li><a href="../business-connect.html">Business Connect</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-dropdown="regulatory">Regulatory Information</a>
+                        <ul class="dropdown-menu" id="regulatory-dropdown">
+                            <li><a href="../about/annual-return.html">Annual Return</a></li>
+                            <li><a href="../about/policies.html">Policies</a></li>
+                            <li><a href="../about/customer-grievance.html">Customer Grievance</a></li>
+                            <li><a href="../about/corporate-notices.html">Corporate Notices</a></li>
+                            <li><a href="../about/disclosure.html">Disclosure</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../events-gallery.html" class="nav-link">Events Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../careers-at-cfmarc.html" class="nav-link">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../contact-us.html" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Properties with CFMARC</h1>
+                <nav class="breadcrumb">
+                    <a href="../index.html">Home</a> / Business / Properties with CFMARC
+                </nav>
+            </div>
+        </section>
+
+        <!-- Properties Content -->
+        <section class="section">
+            <div class="container">
+                <div class="content-wrapper">
+                    <div class="featured-properties">
+                        <h2>Available Properties</h2>
+                        
+                        <!-- Filter Section -->
+                        <div class="property-filters">
+                            <div class="filter-buttons">
+                                <div class="filter-dropdown">
+                                    <button class="filter-btn" id="stateFilterBtn" onclick="toggleFilter('state')">
+                                        <span class="filter-text">State</span>
+                                        <span class="filter-arrow">▼</span>
+                                    </button>
+                                    <div class="filter-dropdown-content" id="stateFilterDropdown">
+                                        <div class="filter-options" id="stateFilterOptions">
+                                            <!-- State options will be populated dynamically -->
+                                        </div>
+                                        <div class="filter-actions">
+                                            <button class="filter-apply-btn" onclick="applyFilter('state')">Apply</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="filter-dropdown">
+                                    <button class="filter-btn" id="categoryFilterBtn" onclick="toggleFilter('category')">
+                                        <span class="filter-text">Category</span>
+                                        <span class="filter-arrow">▼</span>
+                                    </button>
+                                    <div class="filter-dropdown-content" id="categoryFilterDropdown">
+                                        <div class="filter-options" id="categoryFilterOptions">
+                                            <!-- Category options will be populated dynamically -->
+                                        </div>
+                                        <div class="filter-actions">
+                                            <button class="filter-apply-btn" onclick="applyFilter('category')">Apply</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="filter-dropdown">
+                                    <button class="filter-btn" id="cityFilterBtn" onclick="toggleFilter('city')">
+                                        <span class="filter-text">City</span>
+                                        <span class="filter-arrow">▼</span>
+                                    </button>
+                                    <div class="filter-dropdown-content" id="cityFilterDropdown">
+                                        <div class="filter-options" id="cityFilterOptions">
+                                            <!-- City options will be populated dynamically -->
+                                        </div>
+                                        <div class="filter-actions">
+                                            <button class="filter-apply-btn" onclick="applyFilter('city')">Apply</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <button class="filter-clear-all-btn" onclick="clearAllFilters()">Clear All Filters</button>
+                            </div>
+                        </div>
+                        
+                        <div id="propertiesGrid" class="properties-grid">
+                            <!-- Properties will be dynamically loaded here -->
+                            <div class="loading">Loading properties...</div>
+                        </div>
+                    </div>
+
+                    <div class="property-benefits">
+                        <h2>Why Choose CFMARC Properties?</h2>
+                        <div class="benefits-grid">
+                            <div class="benefit-card">
+                                <h3>Clear Title</h3>
+                                <p>All properties come with verified and clear title documents, ensuring legal ownership.</p>
+                            </div>
+                            <div class="benefit-card">
+                                <h3>Transparent Pricing</h3>
+                                <p>Competitive and transparent pricing with no hidden charges or surprises.</p>
+                            </div>
+                            <div class="benefit-card">
+                                <h3>Legal Support</h3>
+                                <p>Complete legal support throughout the acquisition process.</p>
+                            </div>
+                            <div class="benefit-card">
+                                <h3>Quick Processing</h3>
+                                <p>Streamlined process ensuring timely property acquisition and registration.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-content">
+                    <!-- Quick Links Section -->
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="../index.html">About Us</a></li>
+                            <li><a href="properties.html">Properties</a></li>
+                            <li><a href="assets-under-possession.html">Assets Under Possession</a></li>
+                            <li><a href="../events-gallery.html">Events Gallery</a></li>
+                            <li><a href="../careers-at-cfmarc.html">Careers</a></li>
+                            <li><a href="../contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Services Section -->
+                    <div class="footer-section">
+                        <h3>Services</h3>
+                        <ul class="footer-links">
+                            <li><a href="../business/properties.html">Property Auctions</a></li>
+                            <li><a href="../business/assets-under-possession.html">Asset Management</a></li>
+                            <li><a href="../about/annual-return.html">Annual Returns</a></li>
+                            <li><a href="../about/policies.html">Policies & Procedures</a></li>
+                            <li><a href="../about/customer-grievance.html">Customer Support</a></li>
+                            <li><a href="../about/csr-projects.html">CSR Initiatives</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info Section -->
+                    <div class="footer-section">
+                        <h3>Contact Info</h3>
+                        <ul class="contact-info">
+                            <li><br>Mon - Fri: 10:30 AM - 7:00 PM<br>Saturday & Sunday: Closed</li>
+                            <li><br>Corporate Office:<br>1st Floor, Wakefield House,Sprott Road,<br>Ballard Estate,Mumbai 400 001, India<br>+91- 22 47831222 ( Board Line)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p style="font-size: 0.85rem; opacity: 0.7;">Designed & Developed by CFMARC Tech Team</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    
+    <!-- ChatBot Widget -->
+    <div id="chatbotWidget" class="chatbot-widget">
+        <div class="chatbot-header">
+            <div class="chatbot-title">
+                <span class="ai-icon">🤖</span>
+                <h3>CFM.AI Assistant</h3>
+                <span class="status-indicator online"></span>
+            </div>
+            <button id="toggleChatbot" class="toggle-btn">
+                <span>−</span>
+            </button>
+            <button id="closeChatbot" class="close-btn">
+                ×
+            </button>
+        </div>
+        
+        <div class="chatbot-body" id="chatbotBody">
+            <div class="chat-messages" id="chatMessages">
+                <!-- Messages will be dynamically added here -->
+            </div>
+            
+            <div class="chat-input-container" id="chatInputContainer">
+                <input type="text" id="chatInput" placeholder="Type your message..." disabled>
+                <button id="sendMessage" class="send-btn" disabled>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ChatBot Script -->
+    <script src="../chatbot.js"></script>
+</body>
+</html>

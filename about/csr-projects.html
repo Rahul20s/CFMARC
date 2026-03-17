@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Social Responsibility - CFMARC</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../chatbot.css">
+    <style>
+        .csr-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .csr-section {
+            margin-bottom: 3rem;
+        }
+        
+        .csr-section h2 {
+            color: #003366;
+            margin-bottom: 2rem;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+        
+        .csr-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .csr-table th {
+            background: #003366;
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .csr-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #e0e0e0;
+            vertical-align: middle;
+        }
+        
+        .csr-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .download-btn {
+            background: #003366;
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background 0.3s ease;
+        }
+        
+        .download-btn:hover {
+            background: #002244;
+        }
+        
+        .csr-image-section {
+            margin-top: 2rem;
+            text-align: center;
+        }
+        
+        .csr-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .csr-image:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .image-caption {
+            margin-top: 1.5rem;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #f8fafc 0%, #e8f4fd 100%);
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .image-caption h3 {
+            color: #003366;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .image-caption p {
+            color: #666;
+            margin: 0;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        
+        @media (max-width: 768px) {
+            .csr-table {
+                font-size: 0.875rem;
+            }
+            
+            .csr-table th,
+            .csr-table td {
+                padding: 0.75rem 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="../index.html" class="logo">
+                        <img src="../images/CFMARC Logo.jpg" alt="CFMARC Logo">
+                    </a>
+                </div>
+                
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-dropdown="about">About Us</a>
+                        <ul class="dropdown-menu" id="about-dropdown">
+                            <li><a href="board-members.html">Board Of Directors</a></li>
+                            <li><a href="senior-management.html">Leadership Team</a></li>
+                            <li><a href="csr-projects.html">Corporate Social Responsibility</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="../business/properties.html" class="nav-link dropdown-toggle" data-dropdown="business">Business</a>
+                        <div class="dropdown-menu" id="business">
+                            <a href="../business/properties.html" class="dropdown-link">Properties with CFMARC</a>
+                            <a href="../business/assets-under-possession.html" class="dropdown-link">Assets Under Possession</a>
+                            <a href="../business-connect.html" class="dropdown-link">Business Connect</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-dropdown="regulatory">Regulatory Information</a>
+                        <ul class="dropdown-menu" id="regulatory-dropdown">
+                            <li><a href="annual-return.html">Annual Return</a></li>
+                            <li><a href="policies.html">Policies</a></li>
+                            <li><a href="customer-grievance.html">Customer Grievance</a></li>
+                            <li><a href="corporate-notices.html">Corporate Notices</a></li>
+                            <li><a href="disclosure.html">Disclosure</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../events-gallery.html" class="nav-link">Events Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../careers-at-cfmarc.html" class="nav-link">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../contact-us.html" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Corporate Social Responsibility</h1>
+                <nav class="breadcrumb">
+                    <a href="../index.html">Home</a> / About Us / Corporate Social Responsibility
+                </nav>
+            </div>
+        </section>
+
+        <!-- CSR Content -->
+        <section class="section">
+            <div class="container">
+                <div class="csr-container">
+                    <!-- CSR Documents Section -->
+                    <div class="csr-section">
+                        <h2>CSR Documents</h2>
+                        <table class="csr-table">
+                            <thead>
+                                <tr>
+                                    <th>Particulars</th>
+                                    <th>Download Now</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Project Vedashree Tapovan</td>
+                                    <td>
+                                        <a href="#" class="download-btn" onclick="downloadPDF('Vedashri Tapovan Brochure _English.pdf')">Download Now</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>CSR Annual Action Plan I</td>
+                                    <td>
+                                        <a href="#" class="download-btn" onclick="downloadPDF('CSR Annual Action Plan I 24-25.pdf')">Download Now</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>CSR Action plan for FY 25-26</td>
+                                    <td>
+                                        <a href="#" class="download-btn" onclick="downloadPDF('Annual Action Plan 25-26.pdf')">Download Now</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <!-- CSR Image Section -->
+                        <div class="image-caption">
+                            <h3>Our CSR Drive</h3>
+                            <a href="#" class="download-btn" onclick="downloadPDF('CSR Policy.pdf')">CSR Policy</a>
+                        </div>
+                        <div class="csr-image-section">
+                            <img src="../images/events/CSR.jpg" alt="CSR Initiatives" class="csr-image">
+                        </div>
+                    </div>
+
+                    <!-- CSR Committee Directors Section -->
+                    <div class="csr-section">
+                        <h2>CSR Committee Directors</h2>
+                        <table class="csr-table">
+                            <thead>
+                                <tr>
+                                    <th>Name of Director</th>
+                                    <th>Nature of Directorship</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Omprakash Porwal</td>
+                                    <td>Non-executive Director and Member of the Committee</td>
+                                </tr>
+                                <tr>
+                                    <td>Mukesh Gupta</td>
+                                    <td>Independent Director and Member of the Committee</td>
+                                </tr>
+                                <tr>
+                                    <td>Kishor Kharat</td>
+                                    <td>Independent Director and Chairman of the Committee</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+       <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-content">
+                    <!-- Quick Links Section -->
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="../index.html">About Us</a></li>
+                            <li><a href="../business/properties.html">Properties</a></li>
+                            <li><a href="../business/assets-under-possession.html">Assets Under Possession</a></li>
+                            <li><a href="../events-gallery.html">Events Gallery</a></li>
+                            <li><a href="../careers-at-cfmarc.html">Careers</a></li>
+                            <li><a href="../contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Services Section -->
+                    <div class="footer-section">
+                        <h3>Services</h3>
+                        <ul class="footer-links">
+                            <li><a href="../business/properties.html">Property Auctions</a></li>
+                            <li><a href="../business/assets-under-possession.html">Asset Management</a></li>
+                            <li><a href="../about/annual-return.html">Annual Returns</a></li>
+                            <li><a href="../about/policies.html">Policies & Procedures</a></li>
+                            <li><a href="../about/customer-grievance.html">Customer Support</a></li>
+                            <li><a href="../about/csr-projects.html">CSR Initiatives</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info Section -->
+                    <div class="footer-section">
+                        <h3>Contact Info</h3>
+                        <ul class="contact-info">
+                            <li><br>Mon - Fri: 10:30 AM - 7:00 PM<br>Saturday & Sunday: Closed</li>
+                            <li><br>Corporate Office:<br>1st Floor, Wakefield House,Sprott Road,<br>Ballard Estate,Mumbai 400 001, India<br>+91- 22 47831222 ( Board Line)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p style="font-size: 0.85rem; opacity: 0.7;">Designed & Developed by CFMARC Tech Team</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="../chatbot.js"></script>
+    
+    <!-- ChatBot Widget -->
+    <div id="chatbotWidget" class="chatbot-widget">
+        <div class="chatbot-header">
+            <div class="chatbot-title">
+                <span class="ai-icon">🤖</span>
+                <h3>CFM.AI Assistant</h3>
+                <span class="status-indicator online"></span>
+            </div>
+            <button id="toggleChatbot" class="toggle-btn">
+                <span>−</span>
+            </button>
+            <button id="closeChatbot" class="close-btn">
+                ×
+            </button>
+        </div>
+        
+        <div class="chatbot-body" id="chatbotBody">
+            <div class="chat-messages" id="chatMessages">
+                <!-- Messages will be dynamically added here -->
+            </div>
+            
+            <div class="chat-input-container" id="chatInputContainer">
+                <input type="text" id="chatInput" placeholder="Type your message..." disabled>
+                <button id="sendMessage" class="send-btn" disabled>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Function to handle PDF downloads
+        function downloadPDF(filename) {
+            // Try to open PDF in new tab first
+            const pdfUrl = '../documents/' + filename;
+            
+            // Create a temporary link element
+            const link = document.createElement('a');
+            link.href = pdfUrl;
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+            
+            // Trigger the click to open in new tab
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            // Log for debugging
+            console.log('Attempting to open PDF: ' + pdfUrl);
+        }
+        
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Any additional initialization can go here
+        });
+    </script>
+</body>
+</html>
